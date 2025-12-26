@@ -49,11 +49,9 @@ $$\hat{\mathbf{y}} = \mathbf{X}\hat{\boldsymbol{\omega}}$$
 ## Теорема Гаусса-Маркова
 
 При выполнении условий:
-1. **Линейность**: $y_i = \mathbf{x}_i^T \boldsymbol{\omega} + \varepsilon_i$
-2. **Экзогенность**: $\mathbb{E}[\varepsilon_i | \mathbf{X}] = 0$
-3. **Гомоскедастичность**: $\text{Var}(\varepsilon_i | \mathbf{X}) = \sigma^2$
-4. **Некоррелированность ошибок**: $\text{Cov}(\varepsilon_i, \varepsilon_j | \mathbf{X}) = 0$ при $i \neq j$
-5. **Полный ранг**: $\text{rank}(\mathbf{X}) = p + 1$
+1. $\mathbb{E}[\varepsilon_i | \mathbf{X}] = 0$
+2. $\text{Var}(\varepsilon_i | \mathbf{X}) = \sigma^2 < \infty$
+3. $\text{Cov}(\varepsilon_i, \varepsilon_j | \mathbf{X}) = 0$ при $i \neq j$
 
 МНК-оценка $\hat{\boldsymbol{\omega}}$ является **наилучшей линейной несмещенной оценкой** (BLUE).
 
